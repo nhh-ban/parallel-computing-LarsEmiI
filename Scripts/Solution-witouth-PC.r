@@ -25,16 +25,14 @@ df <-
     M = 1000, 
     share_reject = NA) 
 
-
+# No changes made, this is the original script
 for(i in 1:nrow(df)){ 
   df$share_reject[i] <-  
     MTweedieTests( 
       N=df$N[i], 
       M=df$M[i], 
       sig=.05) 
-} 
-
-
+}
 
 
 ## Assignemnt 4 
